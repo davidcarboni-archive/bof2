@@ -1,7 +1,7 @@
 <?php
 require_once "lib/nusoap.php";
 //$client = new nusoap_client("http://localhost/anpr/server.php");
-$client = new nusoap_client("http://localhost/server.php");
+$client = new nusoap_client("http://bof2.herokuapp.com/server.php");
  
 $error = $client->getError();
 if ($error) {
